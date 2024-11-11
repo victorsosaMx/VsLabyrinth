@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Laberinto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="maze-container">
+            <canvas id="maze"></canvas>
+        </div>
+        
+        <div class="sidebar">
+            <div class="level-select">
+                <h2>Nivel de dificultad</h2>
+                <button id="easyBtn">Fácil</button>
+                <button id="mediumBtn">Medio</button>
+                <button id="hardBtn">Difícil</button>
+            </div>
+            
+            <div class="stats">
+                <h3>Tiempo</h3>
+                <div id="timer">00:00</div>
+                <div id="finalTime"></div>
+            </div>
+
+            <div class="instructions">
+                <h3>Instrucciones</h3>
+                <ul>
+                    <li>Usa las teclas de flecha o WASD para mover al jugador</li>
+                    <li>Llega a la casilla verde para ganar</li>
+                    <li>Evita las paredes del laberinto</li>
+                    <li>Intenta completar el nivel en el menor tiempo posible</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
